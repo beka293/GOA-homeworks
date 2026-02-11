@@ -29,3 +29,6 @@ print(nams / 5)
 name = 'beka'
 name1 = 'meskhia'
 print(name + " " + name1)
+
+#მეექვსე დავალება
+#Debugging არის შეცდომის პოვნა და გამოსწორება print-ით 
