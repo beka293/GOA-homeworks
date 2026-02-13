@@ -27,3 +27,18 @@ print(user_gender)
 User_name = input("your name: ")
 print(User_name)
 
+Last_name = input("your last name: ")
+print(Last_name)
+
+User_adress = input("your adress: ")
+print(User_adress)
+
+User_hobby = input("your hobby: ")
+print(User_hobby)
+
+Fav_movie = input("your favorite movie: ")
+print(Fav_movie)
+
+# Case Sensitive ნიშნავს, რომ ენა განასხვავებს დიდ და პატარა ასოებს.ეს ტერმინი ნიშნავს 'ჩართული რეგისტრის მგრძნობელობას' მაგ: ცვლადი Name = ; name = ; NAME =; ეს სამი განსხვავებული ცვლადია
+
+# snake_case არის სახელის მიცემის სტილი, სადაც სიტყვები იყოფა ქვედა ხაზით
