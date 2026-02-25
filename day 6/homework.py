@@ -30,7 +30,7 @@ print("გამრავლება: ", num1 * num2)
 print("გაყოფა: ", num1 / num2)
 
 #num6
-weight = float(input("შეიტანეთ წონა კგ-ში: "))
+weight = float(input("შეიტანეთ წონა კგ-ში: "))   
 height = float(input("შეიტანეთ სიმაღლე მეტრებში: "))
 bmi = weight / (height * height)
 print("თქვენი BMI: ", bmi)
