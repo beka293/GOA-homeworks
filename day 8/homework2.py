@@ -21,4 +21,3 @@ num =  100 <= number <= 999
 print(num)
 
 
-
