@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>მატრიცა - კონტაქტი</title>
+</head>
+
+<body>
+    <p>
+        <a href="index.html">მატრიცა</a> |
+        <a href="characters.html">პერსონაჟები</a> |
+        <a href="contact.html">კონტაქტი</a>
+        <a href="watch.html">ფილმი</a>
+    </p>
+
+    <h1>დაუკავშირდი მატრიცის ფანებს!</h1>
+    <form>
+        <p>სახელი: <input type="text" name="name" placeholder="შენი სახელი" required></p>
+
+        <p>ელფოსტა: <input type="email" name="email" placeholder="example@mail.com" required></p>
+
+        <p>ტელეფონი: <input type="tel" name="phone" placeholder="5XX XXX XXX"></p>
+
+        <p>ასაკი: <input type="number" name="age" min="13" max="100" required></p>
+
+        <p>როდის ნახე?: <input type="date" name="watchdate" required></p>
+
+        <p>სქესი:
+            <input type="radio" name="gender" value="male"> მამრი
+            <input type="radio" name="gender" value="female"> მდედრი
+        </p>
+
+        <p>საყვარელი:
+            <input type="checkbox" name="matrix" value="matrix"> მატრიცა<br>
+            <input type="checkbox" name="inception" value="inception"> Inception
+        </p>
+
+        <p>სკრინშოტი: <input type="file" name="screenshot" accept="image/*"></p>
+
+        <p>შეტყობინება:<br>
+            <textarea name="message" rows="5" placeholder="რას ფიქრობ?" required></textarea>
+        </p>
+
+        <p>პაროლი: <input type="password" name="password" required></p>
+
+        <p><input type="submit" value="გაგზავნა"></p>
+    </form>
+</body>
+
+</html>

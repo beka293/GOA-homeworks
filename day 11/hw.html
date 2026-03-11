@@ -1,0 +1,61 @@
+<!--ფორმები საშუალებას აძლევს მომხმარებლებს გაგზავნონ კომენტარები, შეკითხვები ან დარეგისტრირდნენ. 
+მაგალითად, კონტაქტის ფორმები შეკითხვებისთვის, ლოგინი შეზღუდულ ზონაში შესასვლელად. მაგ:Gmail.com,Facebook.com,Google.com-->
+
+<!--input ტიპები: ერთხაზიანი ტექსტის შეყვანა, სახელისთვის,პაროლი, სიმბოლოები ვალდება,ელფოსტის ვალიდაცია,ღილაკები გენდერისთვის.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>რეგისტრაცია და ლოგინი</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 400px;
+            margin: 50px auto;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: #21a225;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>ლოგინი</h2>
+    <form>
+        <input type="email" name="email" placeholder="ელფოსტა" required>
+        <input type="password" name="password" placeholder="პაროლი" required>
+        <button type="submit">შესვლა</button>
+    </form>
+
+    <h2>რეგისტრაცია</h2>
+    <form>
+        <input type="text" name="name" placeholder="სახელი" required>
+        <input type="email" name="email" placeholder="ელფოსტა" required>
+        <input type="password" name="password" placeholder="პაროლი" required>
+        <label><input type="checkbox" name="terms"> შეთანხმება პირობებთან</label>
+        <button type="submit">რეგისტრაცია</button>
+    </form>
+</body>
+
+</html>
