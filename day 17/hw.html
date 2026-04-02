@@ -1,0 +1,36 @@
+<!--<label> ტეგი HTML-ში გამოიყენება ფორმის ელემენტების (როგორიცაა <input>) ასოციაციისთვის მათი აღწერის ტექსტთან, რაც ზრდის ფორმის ხელმისაწვდომობას და გამოყენებადობას.-->
+
+<!--<label>-ს უკავშირდება <input>-ს for ატრიბუტის გამოყენებით, რომლის მნიშვნელობა უნდა შეესაბამებოდეს input-ის id-ს. მაგალითად: 
+<label for="email">ელფოსტა:</label>
+<input type="email" id="email" name="email"> -->
+<!--                             
+text      ერთხაზიანი ტექსტური შეყვანაemail     ელფოსტის მისამართის ვალიდაციაpassword  შეყვანილი ტექსტის დამალვა  number    რიცხვითი შეყვანა ზღვრებით   -->
+
+
+<!--ჩვეულებრივი submit ღილაკი (<input type="submit"> ან <button type="submit">) ავტომატურად აგზავნის ფორმას სერვერზე Enter-ის დაჭერის ან კლიკის შემდეგ. Custom submit ღილაკი (<button type="button"> JavaScript-ით) საშუალებას იძლევა პერსონალიზებული ლოგიკის განხორციელებას, მაგრამ არ აგზავნის ფორმას ავტომატურად.-->
+
+<!--ყველა input-ს უნდა ჰქონდეს label აქსესიბილიტობისთვის – ეს ეხმარება ეკრანის მკითხველებს-->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ლოგინი</title>
+</head>
+
+<body>
+    <form>
+        <label for="email">ელფოსტა:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">პაროლი:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">შესვლა</button>
+    </form>
+</body>
+
+</html>
