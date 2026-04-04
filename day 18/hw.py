@@ -1,27 +1,33 @@
 for i in range(200, 501):
-    if i % 4 == 0 or i % 7 == 0:
+    if i % 4 == 0:
         print(i)
-
+    if i % 7 == 0:
+     print(i)
 
 
 i = 200
 while i <= 500:
-    if i % 4 == 0 or i % 7 == 0:
+    if i % 4 == 0:
         print(i)
-    i += 1
-
-
+    if i % 7 == 0:
+     print(i)
+     i += 1 
 #2
 for i in range(300, 1001):
-    if i % 3 == 0 or i % 10 == 0:
+    if i % 3 == 0:
+        print(i)
+    if i % 10 == 0:
         print(i)
 
 
 i = 300
 while i <= 1000:
-    if i % 3 == 0 or i % 10 == 0:
+    if i % 3 == 0:
+        print(i)
+    if i % 10 == 0:
         print(i)
     i += 1
+
 
 
 #3
