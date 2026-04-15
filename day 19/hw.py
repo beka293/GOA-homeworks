@@ -24,7 +24,7 @@ for i in range(1, 101):
 #3
 max_num = float('-inf')
 min_num = float('inf')
-for _ in range(8):
+for i in range(8):
     num = float(input("შეიტანეთ რიცხვი: "))
     if num > max_num:
         max_num = num
@@ -32,8 +32,6 @@ for _ in range(8):
         min_num = num
 print(f"მაქსიმუმი: {max_num}")
 print(f"მინიმუმი: {min_num}")
-
-
 #4
 n = int(input("შეიტანეთ N: "))
 count = 0
@@ -43,7 +41,7 @@ for i in range(1, n + 1):
 print(f"3-ის ჯერადები: {count}")
 
 #5
-for i in range(1, 51):
+for i in range(1, 50):
     if i % 4 != 0:
         print(i)
 
@@ -56,4 +54,4 @@ while True:
     total += num
 print(f"ჯამი: {total}")
 
-#7
+

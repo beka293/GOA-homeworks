@@ -1,0 +1,87 @@
+<html>
+
+<head>
+
+    <title>კომპასი</title>
+</head>
+
+<body>
+
+    <h1>კომპასი</h1>
+
+    <p>
+        კომპასი არის ის მარტივი მოწყობილობა, ის აჩვენებს მთავარ მიმართულებებს:
+        <b>ჩრდილოეთი (North), სამხრეთი (South), დასავლეთი (West) და აღმოსავლეთი (East)</b>.
+    </p>
+    <p>
+        ტიპიური კომპასი შეიცავს მაგნიტურ ისარს, რომელიც მიმართულია
+        დედამიწის მაგნიტური ჩრდილოეთისაკენ და ეხმარება დარჩენას სწორ მიმართულებაში
+        ნებისმიერ გზაზე ველში, ტყეში, ზღვაზე ან მთებში.
+    </p>
+
+    <hr>
+
+    <h2>კომპასის ისტორია</h2>
+    <p>
+        პირველი კომპასები შეიქმნა ძველ ჩინეთში ჰანის დინასტიის პერიოდში
+        დაახლოებით ძვ. წ. II საუკუნეში.
+        მათ გამოიყენებდნენ “ლოდსტოუნს” (ბუნებრივ მაგნიტურ ქვას), რომელიც მაგნიტდება და ისარი აჩვენებს მიმართულებას.
+    </p>
+    <p>
+        შემდეგ კომპასი გადაეცა ევროპას და ისლამურ მსოფლიოს და დაიწყო
+        მისი გამოყენება ზღვის ნავიგაციაში, რამაც ძალიან დიდი როლი შეასრულა
+        უკეთ გზების, ახალი მიმდეგარობების აღმოჩენის და ვაჭრობის გავითარებისას.
+    </p>
+
+    <hr>
+
+
+
+    <form>
+        <label>თქვენი სახელი:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <p>რომელი მიმართულების განმარტება გჭირდებათ კომპასის საშუალებით?</p>
+
+        <label>
+            <input type="radio" name="direction" value="North"> ჩრდილოეთი
+        </label><br>
+        <label>
+            <input type="radio" name="direction" value="South"> სამხრეთი
+        </label><br>
+        <label>
+            <input type="radio" name="direction" value="East"> აღმოსავლეთი
+        </label><br>
+        <label>
+            <input type="radio" name="direction" value="West"> დასავლეთი
+        </label><br><br>
+
+        <label>რომელი ქვეყანა მოგესახადათ კომპასის გამოგონება თქვენი მოსაზრებით?</label><br>
+
+        <select name="country">
+            <option value="">აირჩიეთ ქვეყანა</option>
+            <option value="China">ჩინეთი</option>
+            <option value="Italy">იტალია</option>
+            <option value="France">საფრანგეთი</option>
+            <option value="UK">დიდი ბრიტანეთი</option>
+            <option value="Other">სხვა</option>
+        </select><br><br>
+
+        <p>რითი გზით იყენებთ კომპასს ან მსგავს მოწყობილობას?</p>
+
+        <label>
+            <input type="radio" name="use" value="Hiking"> ველურ ტბოში/მეოხახულობა
+        </label><br>
+        <label>
+            <input type="radio" name="use" value="Map"> რუკაზე ორიენტირებისთვის
+        </label><br>
+        <label>
+            <input type="radio" name="use" value="Mobile"> მობილური სმარტფონი (GPS / კომპასი)
+        </label><br><br>
+
+        <input type="submit" value="გადაგზავნა">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!--radio გამოიყენება მაშინ, როდესაც მომხმარებელმა უნდა აირჩიოს მხოლოდ ერთი ვარიანტი რამოდენიმე შორის. მაგ:რეგისტრაციის დროს,რაიმეს ასარჩევად და კი თუ არა,-->
+<!--select გამოიყენება დახრილი სიისთვის, როდესაც მომხმარებელს შეუძლია აირჩიოს ერთი (ან რამოდენიმე) ელემენტი დიდი სიიდან.მაგ:ქვეყნის ასარჩევად,პროდუქტის,ავტომობილის არჩევა-->
+<html>
+
+<head>
+
+    <title>სქესის არჩევა</title>
+</head>
+
+<body>
+    <form>
+        <p>აირჩიეთ სქესი:</p>
+        <label><input type="radio" name="gender" value="Male"> Male</label><br>
+        <label><input type="radio" name="gender" value="Female"> Female</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
+
+<!--4-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ქვეყნის არჩევა</title>
+</head>
+
+<body>
+    <form>
+        <label for="country">ქვეყანა:</label>
+        <select id="country" name="country">
+            <option value="">აირჩიეთ ქვეყანა</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Russia">Russia</option>
+            <option value="Germany">Germany</option>
+            <option value="France" selected>France</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
+
+<!--5-->
+
+<html>
+
+<head>
+
+    <title>პირადი ინფორმაცია</title>
+</head>
+
+<body>
+    <form>
+        <label for="name">სახელი:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <p>საყვარელი ფერი:</p>
+        <label><input type="radio" name="color" value="red"> Red</label><br>
+        <label><input type="radio" name="color" value="blue"> Blue</label><br>
+        <label><input type="radio" name="color" value="green"> Green</label><br><br>
+
+        <label for="city">ქალაქი:</label><br>
+        <select id="city" name="city">
+            <option value="">აირჩიეთ ქალაქი</option>
+            <option value="Tbilisi">Tbilisi</option>
+            <option value="Batumi">Batumi</option>
+            <option value="Kutaisi">Kutaisi</option>
+            <option value="Zugdidi">Zugdidi</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
+
+
+<!--6-->
+
+<html>
+
+<head>
+
+    <title>გამოკითხვა</title>
+</head>
+
+<body>
+    <h2>გამოკითხვა</h2>
+    <form>
+        <p>რომელი პროგრამირების ენა მოგწონთ უფრო მეტად?</p>
+        <label><input type="radio" name="language" value="C++"> C++</label><br>
+        <label><input type="radio" name="language" value="JAVA"> JAVA</label><br>
+        <label><input type="radio" name="language" value="JavaScript"> JavaScript</label><br>
+        <label><input type="radio" name="language" value="Python"> Python</label><br>
+        <label><input type="radio" name="language" value="CSharp"> C#</label><br><br>
+
+        <input type="submit" value="გადაგზავნა">
+    </form>
+</body>
+
+</html>
