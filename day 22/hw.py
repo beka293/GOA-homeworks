@@ -27,7 +27,7 @@ ge = "Georgia"
 print(ge[2:6])
 
 # 8
-word = "Apple"
+word = "apple"
 if word[0] == "A":
     print(word[:3])
 else:
