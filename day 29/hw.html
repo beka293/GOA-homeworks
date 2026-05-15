@@ -1,0 +1,163 @@
+<!-- Long-hand: როდესაც თითოეულ პარამეტრს (ზედა, ქვედა, მარჯვენა, მარცხენა) ცალ-ცალკე ვწერთ.
+
+Short-hand: როდესაც რამდენიმე პარამეტრს ერთ ხაზში ვაერთიანებთ. -->
+<!-- CSS-ში Long-hand ნიშნავს თითოეული თვისების ცალ-ცალკე გაწერას, ხოლო Short-hand საშუალებას გვაძლევს რამდენიმე თვისება ერთ ხაზზე მოვაქციოთ.
+
+მაგალითი (Long-hand):
+<div style="border-width: 2px; border-style: solid; border-color: red;">ტექსტი</div>
+
+მაგალითი (Short-hand):
+<div style="border: 2px solid red;">ტექსტი</div> -->
+<!-- <table> ტეგი გამოიყენება ვებ-გვერდზე მონაცემთა ორგანიზებისთვის ცხრილის სახით. -->
+
+
+<!-- <tr> (Table Row): ქმნის ერთ ჰორიზონტალურ რიგს ცხრილში. ყველა უჯრა უნდა მოექცეს ამ ტეგის შიგნით.
+
+<th> (Table Header): გამოიყენება სათაურის უჯრისთვის. ის მიანიშნებს, თუ რა მონაცემია მოცემულ სვეტში.
+
+<td> (Table Data): ეს არის ჩვეულებრივი უჯრა, სადაც იწერება უშუალოდ მონაცემები. -->
+
+<!-- ბრაუზერი <th>-ში მოთავსებულ ტექსტს ავტომატურად ხდის მუქს და სვამს ცენტრში. <td>-ში კი ტექსტი ჩვეულებრივია და მარცხნივაა გასწორებული. -->
+
+
+
+<!-- ცხრილის სწორი სტრუქტურა კრიტიკულია რამდენიმე მიზეზის გამო:
+
+მონაცემთა სიზუსტე: თუ რიგები და სვეტები არევა, მომხმარებელი არასწორ ინფორმაციას მიიღებს (მაგალითად, სხვა პროდუქტის ფასს სხვაზე მიაწერს).
+
+ადაპტურობა: სწორად აწყობილი ცხრილის სტილიზაცია (CSS-ით მორთვა) გაცილებით მარტივია.
+
+მისაწვდომობა (Accessibility): პროგრამები, რომლებიც უსინათლოებს ვებ-გვერდს უკითხავენ, მხოლოდ სწორად სტრუქტურირებულ ცხრილს აღიქვამენ ლოგიკურად. -->
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+
+</head>
+
+
+
+
+
+<body style="font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4;">
+
+
+
+    <!--  6 -->
+    <h3 style="color: #333;">დავალება 6</h3>
+    <table
+        style="border: 1px solid black; border-collapse: collapse; text-align: center; font-size: 24px; width: 300px;">
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">1</td>
+            <td style="border: 1px solid black; padding: 10px;">2</td>
+            <td style="border: 1px solid black; padding: 10px;">3</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">4</td>
+            <td style="border: 1px solid black; padding: 10px;">5</td>
+            <td style="border: 1px solid black; padding: 10px;">6</td>
+        </tr>
+    </table>
+
+    <!--  7 -->
+    <h3 style="color: #333;">დავალება 7</h3>
+    <table style="border-collapse: collapse; width: 400px; border: 1px solid black;">
+        <tr style="background-color: blue; color: white;">
+            <th style="border: 1px solid black; padding: 10px;">სახელი</th>
+            <th style="border: 1px solid black; padding: 10px;">გვარი</th>
+            <th style="border: 1px solid black; padding: 10px;">ასაკი</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">გიორგი</td>
+            <td style="border: 1px solid black; padding: 10px;">ბერიძე</td>
+            <td style="border: 1px solid black; padding: 10px;">15</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">ნინო</td>
+            <td style="border: 1px solid black; padding: 10px;">კაპანაძე</td>
+            <td style="border: 1px solid black; padding: 10px;">16</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 10px;">ლუკა</td>
+            <td style="border: 1px solid black; padding: 10px;">გელაშვილი</td>
+            <td style="border: 1px solid black; padding: 10px;">14</td>
+        </tr>
+    </table>
+
+    <!--  8 -->
+    <h3 style="color: #333;">დავალება 8</h3>
+    <table style="border-collapse: collapse; font-family: Arial; text-align: center;">
+        <tr>
+            <td style="width: 50px; height: 50px; background-color: #ff9999; border: 1px solid gray;">1</td>
+            <td style="width: 50px; height: 50px; background-color: #99ff99; border: 1px solid gray;">2</td>
+            <td style="width: 50px; height: 50px; background-color: #9999ff; border: 1px solid gray;">3</td>
+            <td style="width: 50px; height: 50px; background-color: #ffff99; border: 1px solid gray;">4</td>
+        </tr>
+        <tr>
+            <td style="width: 50px; height: 50px; background-color: #ff99ff; border: 1px solid gray;">5</td>
+            <td style="width: 50px; height: 50px; background-color: #99ffff; border: 1px solid gray;">6</td>
+            <td style="width: 50px; height: 50px; background-color: #ffcc99; border: 1px solid gray;">7</td>
+            <td style="width: 50px; height: 50px; background-color: #cc99ff; border: 1px solid gray;">8</td>
+        </tr>
+
+    </table>
+
+    <!--  9 -->
+    <h3 style="color: #333;">დავალება 9</h3>
+    <table style="border: 3px solid black; border-collapse: collapse; width: 400px; font-size: 20px;">
+        <tr style="background-color: gray; color: white;">
+            <th style="border: 3px solid black; padding: 10px;">დღე</th>
+            <th style="border: 3px solid black; padding: 10px;">საგანი</th>
+            <th style="border: 3px solid black; padding: 10px;">დრო</th>
+        </tr>
+        <tr>
+            <td style="border: 3px solid black; padding: 10px;">ორშაბათი</td>
+            <td style="border: 3px solid black; padding: 10px;">მათემატიკა</td>
+            <td style="border: 3px solid black; padding: 10px;">09:00</td>
+        </tr>
+    </table>
+
+    <!--  10 -->
+    <h3 style="color: #333;"> 5 რიგი</h3>
+    <table style="border: 2px solid yellow; border-collapse: collapse; width: 300px; text-align: right;">
+        <tr style="background-color: #f1c40f;">
+            <td style="padding: 10px;"> 1</td>
+        </tr>
+        <tr style="background-color: #e67e22;">
+            <td style="padding: 10px;"> 2</td>
+        </tr>
+        <tr style="background-color: #e74c3c;">
+            <td style="padding: 10px;"> 3</td>
+        </tr>
+        <tr style="background-color: #9b59b6;">
+            <td style="padding: 10px;"> 4</td>
+        </tr>
+        <tr style="background-color: #3498db;">
+            <td style="padding: 10px;"> 5</td>
+        </tr>
+    </table>
+
+    <!--  11 -->
+    <h3 style="color: #333;">დავალება 11</h3>
+    <table style="border-collapse: collapse; width: 300px;">
+        <tr>
+            <th style="font-size: 22px; color: darkgreen;">პროდუქტი</th>
+            <th style="font-size: 22px; color: darkred;">ფასი</th>
+        </tr>
+        <tr>
+            <td style="font-size: 18px; color: brown;">პური</td>
+            <td style="font-size: 20px; font-weight: bold;">1.3ლ</td>
+        </tr>
+        <tr>
+            <td style="font-size: 16px; color: blue;">წყალი</td>
+            <td style="font-size: 18px; font-style: italic;">2ლ</td>
+        </tr>
+        <tr>
+            <td style="font-size: 25px; color: red;">ხორცი</td>
+            <td style="font-size: 22px; text-decoration: underline;">10ლ</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
