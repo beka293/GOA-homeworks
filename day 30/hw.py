@@ -1,14 +1,14 @@
 # 1 and 2
 upper_text = "პითონი საინტერესო პროგრამირების ენაა"
 lower_result = upper_text.lower()
-print(f"2) პატარა ასოებით: {lower_result}")
-
+print(f"2 პატარა ასოებით: {lower_result}")
+   
 # 3 and 4
 user_word = input("4) შემოიტანეთ სიტყვა (გადასადიდებლად): ")
 print(f"შედეგი: {user_word.upper()}")
 
 # 5 and 6
-words_list = ["apple", "banana", "cherry"]
+words_list = ["aPLE", "banana", "cherry"]
 print("6) სიის ელემენტები title ფორმატში:")
 for word in words_list:
     print(word.title())
@@ -41,6 +41,7 @@ for symbol in vowel_text:
 print(f"ხმოვნების რაოდენობაა: {v_count}")
 
 # 12
+
 stat_text = input("12) შემოიტანეთ წინადადება სტატისტიკისთვის: ")
 length = len(stat_text)
 
