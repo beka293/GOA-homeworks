@@ -1,0 +1,370 @@
+<!-- 1) ახსენით შემდეგი ტეგები: thead, tbody, tfoot -->
+<!-- <thead> (Table Header): აჯგუფებს ცხრილის სათაურის სტრიქონებს -->
+<!-- <tbody> (Table Body): მოიცავს ცხრილის ძირითად მონაცემებსა და შინაარსს. ერთ ცხრილში შეიძლება არსებობდეს რამდენიმე <tbody> სექციაც, მონაცემთა ჯგუფების დასაყოფად. -->
+<!-- <tfoot> (Table Footer): აჯგუფებს ცხრილის შემაჯამებელ სტრიქონებს -->
+
+<!-- 2) ააგეთ ცხრილი ამ 3 ტეგის გამოყენებით -->
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>პროდუქტი</th>
+            <th>რაოდენობა</th>
+            <th>ფასი</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ვაშლი</td>
+            <td>5 კგ</td>
+            <td>15 ₾</td>
+        </tr>
+        <tr>
+            <td>ბანანი</td>
+            <td>2 კგ</td>
+            <td>8 ₾</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">სულ:</td>
+            <td>23 ₾</td>
+        </tr>
+    </tfoot>
+</table>
+<!-- 3) რისთვის გვჭირდება rowspan ატრიბუტი?
+4) რისთვის გვჭირდება colspan ატრიბუტი? -->
+
+<!-- rowspan გამოიყენება იმისთვის, რომ ერთმა უჯრამ (სვეტში) დაიკავოს რამდენიმე ვერტიკალური სტრიქონის სივრცე. მისი მნიშვნელობა განსაზღვრავს, თუ რამდენ სტრიქონზე უნდა გადაიჭიმოს უჯრა ქვემოთ -->
+<!-- colspan გამოიყენება იმისთვის, რომ ერთმა უჯრამ (სტრიქონში) დაიკავოს რამდენიმე ჰორიზონტალური სვეტის სივრცე. მისი მნიშვნელობა განსაზღვრავს, თუ რამდენ სვეტზე უნდა გადაიჭიმოს უჯრა გვერდით. -->
+
+<!-- 5) ააგეთ შემდეგი ცხრილები(კარგი იქნება თუ გაალამაზებთ css-ით)  -->
+
+<table
+    style="border-collapse: separate; border-spacing: 3px; border: 2px solid #555; font-family: Arial, sans-serif; margin: 20px auto; background-color: #fff;">
+    <thead>
+        <tr>
+            <th colspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 24px; font-weight: bold;">
+                Student Info</th>
+        </tr>
+        <tr>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Name</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Nika</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">17</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table
+    style="border-collapse: separate; border-spacing: 3px; border: 2px solid #555; font-family: Arial, sans-serif; margin: 20px auto; background-color: #fff;">
+    <thead>
+        <tr>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Day</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Subject</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">
+                Monday</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Math</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Physics</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table
+    style="border-collapse: separate; border-spacing: 3px; border: 2px solid #555; font-family: Arial, sans-serif; margin: 20px auto; background-color: #fff;">
+    <thead>
+        <tr>
+            <th rowspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Name</th>
+            <th colspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Scores</th>
+        </tr>
+        <tr>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Math</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Science</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Ana</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">95</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">88</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Luka</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">90</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">92</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table
+    style="border-collapse: separate; border-spacing: 3px; border: 2px solid #555; font-family: Arial, sans-serif; margin: 20px auto; background-color: #fff;">
+    <thead>
+        <tr>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Time</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Monday</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Tuesday</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Wednesday</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">09:00</td>
+            <td rowspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">
+                Math</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">English</td>
+            <td rowspan="3" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">
+                Programming</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">10:00</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">History</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">11:00</td>
+            <td colspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">
+                Sports</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">12:00</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Physics</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Chemistry</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Biology</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<table
+    style="border-collapse: separate; border-spacing: 3px; border: 2px solid #555; font-family: Arial, sans-serif; margin: 20px auto; background-color: #fff;">
+    <thead>
+        <tr>
+            <th rowspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                ID</th>
+            <th colspan="3"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Personal Info</th>
+            <th colspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Performance</th>
+        </tr>
+        <tr>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Name</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Country</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Role</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Score</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Rank</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">001
+            </td>
+            <td rowspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">
+                Nika</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Georgia</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Frontend</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">98</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">A</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">
+                Full Stack Developer</td>
+            <td colspan="2" rowspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Outstanding
+                Performance</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">002</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Luka</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Germany</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">Backend</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="6" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 18px;">End
+                of Report</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<table
+    style="border-collapse: separate; border-spacing: 3px; border: 2px solid #555; font-family: Arial, sans-serif; margin: 20px auto; background-color: #fff;">
+    <thead>
+        <tr>
+            <th rowspan="3"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Department</th>
+            <th rowspan="3"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Year</th>
+            <th colspan="6"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Exam Results</th>
+        </tr>
+        <tr>
+            <th colspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Semester 1</th>
+            <th colspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Semester 2</th>
+            <th colspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Final</th>
+        </tr>
+        <tr>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Theory</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Practical</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Theory</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Practical</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Average</th>
+            <th
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px; font-weight: bold;">
+                Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">
+                Computer Science</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">1</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">85</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">91</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">88</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">93</td>
+            <td rowspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">
+                89.25</td>
+            <td rowspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">
+                Passed</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">2</td>
+            <td colspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">
+                Research Project</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">90</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">94</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="8" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 18px;">
+                Academic Summary Complete</td>
+        </tr>
+    </tfoot>
+</table>
+
+<table
+    style="border-collapse: separate; border-spacing: 3px; border: 2px solid #555; font-family: Arial, sans-serif; margin: 20px auto; background-color: #fff;">
+    <tbody>
+        <tr>
+            <td rowspan="4" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">1
+            </td>
+            <td colspan="4" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">2
+            </td>
+            <td rowspan="3" colspan="3"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">3</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">4</td>
+            <td colspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">5
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">6</td>
+            <td rowspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">7
+            </td>
+            <td rowspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">8
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">9
+            </td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">10</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">11</td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">12</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">13</td>
+            <td rowspan="2" colspan="2"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">14</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">15</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">16</td>
+            <td style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">17</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">18
+            </td>
+            <td colspan="2" style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 16px;">19
+            </td>
+            <td colspan="4"
+                style="border: 1px solid #777; padding: 15px 20px; text-align: center; font-size: 24px; font-weight: bold;">
+                BOSS LEVEL</td>
+        </tr>
+    </tbody>
+</table>

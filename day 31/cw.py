@@ -15,13 +15,13 @@
 # print(colors_list)
 
 
-numbers_input = input("შემოიტანეთ რიცხვები: ")
+# numbers_input = input("შემოიტანეთ რიცხვები: ")
 
-string_list = numbers_input.split()
+# string_list = numbers_input.split()
 
-numbers_list = []
+# numbers_list = []
 
-for i in string_list:
-    numbers_list.append(int(i))
+# for i in string_list:
+#     numbers_list.append(int(i))
 
-print(numbers_list)
+# print(numbers_list)
