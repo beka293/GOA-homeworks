@@ -3,12 +3,12 @@
 
 # mn()
 
-def check_even_odd(number):
+def checkevenodd(number):
     if number % 2 == 0:
         print("რიცხვი ლუწია")
     else:
         print("რიცხვი კენტია")
 
 
-check_even_odd(143)  
-check_even_odd(19)   
+checkevenodd(144)  
+checkevenodd(19) 
