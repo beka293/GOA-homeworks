@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS სელექტორების დავალება</title>
+
+    <style>
+        p:not(:last-of-type) {
+            text-decoration: underline;
+        }
+
+
+        p {
+            color: blue;
+            font-size: 20px;
+        }
+
+
+        .box-task {
+            background-color: lightgray;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+
+        .text {
+            color: green;
+        }
+
+
+        #title {
+            color: red;
+            text-align: center;
+        }
+
+
+        #button1 {
+            background-color: gold;
+        }
+
+        #button2 {
+            background-color: coral;
+        }
+
+
+        .paragraph {
+            color: orange;
+        }
+
+        #demo {
+            color: darkcyan;
+        }
+
+
+        .btn {
+            background-color: navy;
+            color: white;
+            padding: 10px;
+            border: none;
+            margin: 5px;
+        }
+
+
+        h1 {
+            color: brown;
+        }
+
+        .heading {
+            color: lime;
+        }
+
+        #main-title {
+            color: rebeccapurple;
+        }
+
+
+        .box {
+            border: 2px solid black;
+            padding: 15px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>პირველი პარაგრაფი</p>
+    <p>მეორე პარაგრაფი</p>
+    <p>მესამე პარაგრაფი</p>
+
+    <hr>
+
+    <div class="box-task">პირველი Box კონტეინერი</div>
+    <div class="box-task">მეორე Box კონტეინერი</div>
+
+    <hr>
+
+    <p class="text">ამ პარაგრაფს აქვს კლასი (მწვანეა).</p>
+    <p class="text">ამასაც აქვს კლასი (მწვანეა).</p>
+    <p>ამას არ აქვს კლასი (ლურჯია).</p>
+
+    <hr>
+
+    <h1 id="title">ეს არის მთავარი სათაური</h1>
+
+    <hr>
+
+    <button id="button1">ღილაკი 1</button>
+    <button id="button2">ღილაკი 2</button>
+
+    <hr>
+
+    <p id="demo" class="paragraph">დააკვირდით ფერს! (გამოჩნდება darkcyan)</p>
+
+    <hr>
+
+    <button class="btn">ღილაკი ა</button>
+    <button class="btn">ღილაკი ბ</button>
+    <button class="btn">ღილაკი გ</button>
+
+    <hr>
+
+    <h1 id="main-title" class="heading">რომელი სტილი გაიმარჯვებს? (აქაც ID გაიმარჯვებს)</h1>
+
+    <hr>
+
+    <div class="box">
+        <p class="text">პარაგრაფი box-ის შიგნით</p>
+        <p class="text">მეორე პარაგრაფი box-ის შიგნით</p>
+        <button>ღილაკი box-ის შიგნით</button>
+    </div>
+
+</body>
+
+</html>
