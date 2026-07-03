@@ -1,0 +1,186 @@
+/* დავალება 2 */
+.p-task2-1 {
+    color: red;
+}
+
+.p-task2-2 {
+    color: rgb(0, 0, 255);
+}
+
+.p-task2-3 {
+    color: #008000;
+}
+
+/* დავალება 3 */
+.div-task3-1,
+.div-task3-2,
+.div-task3-3 {
+    width: 200px;
+    height: 80px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.div-task3-1 {
+    background-color: rgb(255, 0, 0);
+}
+
+.div-task3-2 {
+    background-color: rgb(0, 255, 0);
+}
+
+.div-task3-3 {
+    background-color: rgb(0, 0, 255);
+}
+
+/* დავალება 4 */
+.div-task4-1,
+.div-task4-2,
+.div-task4-3,
+.div-task4-4 {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    /* გვერდიგვერდ რომ გამოჩნდეს */
+    margin-right: 5px;
+}
+
+.div-task4-1 {
+    background-color: #FF0000;
+}
+
+.div-task4-2 {
+    background-color: #00FF00;
+}
+
+.div-task4-3 {
+    background-color: #0000FF;
+}
+
+.div-task4-4 {
+    background-color: #FFFF00;
+}
+
+/* დავალება 5 */
+.p-task5-original {
+    color: rgb(120, 50, 200);
+    font-size: 20px;
+}
+
+.p-task5-darkblue {
+    color: rgb(0, 0, 139);
+    font-size: 20px;
+}
+
+.p-task5-lightgreen {
+    color: rgb(144, 238, 144);
+    font-size: 20px;
+}
+
+.p-task5-purple {
+    color: rgb(128, 0, 128);
+    font-size: 20px;
+}
+
+/* დავალება 6 */
+.h1-task6-original {
+    color: #FF8800;
+    text-align: center;
+    font-size: 40px;
+}
+
+.h1-task6-red {
+    color: #FF0000;
+    text-align: center;
+    font-size: 40px;
+}
+
+.h1-task6-blue {
+    color: #0000FF;
+    text-align: center;
+    font-size: 40px;
+}
+
+.h1-task6-black {
+    color: #000000;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* დავალება 7 */
+.h2-underline {
+    text-decoration: underline;
+}
+
+.h2-line-through {
+    text-decoration: line-through;
+}
+
+.h2-overline {
+    text-decoration: overline;
+}
+
+/* დავალება 8 */
+.div-task8 {
+    width: 400px;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* დავალება 9 */
+.div-w20,
+.div-w40,
+.div-w60,
+.div-w80,
+.div-w100 {
+    height: 80px;
+    background-color: coral;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.div-w20 {
+    width: 20%;
+}
+
+.div-w40 {
+    width: 40%;
+}
+
+.div-w60 {
+    width: 60%;
+}
+
+.div-w80 {
+    width: 80%;
+}
+
+.div-w100 {
+    width: 100%;
+}
+
+/* დავალება 10 */
+.parent-div {
+    width: 600px;
+    height: 300px;
+    background-color: lightblue;
+}
+
+.child-div {
+    width: 50%;
+    height: 50%;
+    background-color: navy;
+    color: white;
+}
