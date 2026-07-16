@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.neon-container {
+    background-color: #000000;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+}
+
+.neon-text {
+    color: #00ff00;
+    text-shadow:
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 20px #00ff00,
+        0 0 40px #00ff00;
+}
+
+
+.raised-container {
+    background-color: #e0e0e0;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+}
+
+.raised-text {
+    color: #ffffff;
+    text-shadow:
+        0 1px 0 #ccc,
+        0 2px 0 #c5c5c5,
+        0 3px 0 #bbb,
+        0 4px 0 #b0b0b0,
+        0 5px 1px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.3),
+        0 3px 5px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.embossed-container {
+    background-color: #666666;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+}
+
+.embossed-text {
+    color: #555555;
+    text-shadow:
+        -1px -1px 1px #333333,
+        1px 1px 1px #ffffff;
+}
+
+
+.fire-container {
+    background-color: #000000;
+    padding: 40px 30px;
+    text-align: center;
+    width: 400px;
+}
+
+.fire-text {
+    color: #ffffff;
+    text-shadow:
+        0 0 4px #ffffff,
+        0 -2px 4px #ffcc00,
+        2px -4px 6px #ff6600,
+        -2px -8px 10px #ff3300,
+        2px -12px 14px #cc0000;
+}
